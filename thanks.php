@@ -16,7 +16,7 @@
 		内容を確認のうえ、回答させて頂きます。<br>
 		しばらくお待ちください。
 		</p>
-		<a href="input.php">
+		<a href="index.php">
 			<button type="button">お問い合わせに戻る</button>
 		</a>
 	</div>
