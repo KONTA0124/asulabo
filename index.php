@@ -25,7 +25,6 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
     foreach($query_result as $row) {
-    echo $row["user_id"] . ": " . $row["message"] . $row["speech_date"] . "<br/>";
     }
 
   // DBを切断する
@@ -77,8 +76,7 @@ try {
 
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
-    foreach($query_result as $row) {
-    print "<option value="">" . $row["message"] . "</option>";
+    foreach($query_result as $row) {<option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>";
     }
 
   // DBを切断する
