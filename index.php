@@ -78,7 +78,7 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
     foreach($query_result as $row) {
-    echo "<option value="">" . $row["message"] . "</option>";
+    print "<option value="">" . $row["message"] . "</option>";
     }
 
   // DBを切断する
