@@ -20,7 +20,7 @@ try {
 
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT message FROM messages');
-    echo $query_result;
+    echo 'success';
 
   // DBを切断する
   $dbh = null;
