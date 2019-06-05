@@ -19,7 +19,7 @@ try {
   $dbh = new PDO($dsn, $user, $pass);
 
   // ここでクエリ実行する
-    $query_result = $dbh->query('SELECT * FROM messages');
+    $query_result = $dbh->query('SELECT message FROM messages');
     echo $query_result;
 
   // DBを切断する
