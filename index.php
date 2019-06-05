@@ -19,8 +19,10 @@ try {
   $dbh = new PDO($dsn, $user, $pass);
 
   // ここでクエリ実行する
-    $query_result = $dbh->query('SELECT message FROM messages');
-    echo 'success';
+    $query_result = $dbh->query('SELECT * FROM messages');
+    foreach($query_result as $row) {
+    print $row["id"] . ": " . $row["message"] . "<br/>";
+  }
 
   // DBを切断する
   $dbh = null;
