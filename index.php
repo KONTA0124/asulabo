@@ -82,6 +82,7 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
     foreach($query_result as $row) {
+        print '<option value="">お問い合わせ項目を選択してください</option>';
     }
 
   // DBを切断する
