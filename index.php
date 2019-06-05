@@ -13,6 +13,7 @@
         <h1>Company Name</h1></div>
     <div>
         <h2>お問い合わせ</h2></div>
+
     <?php
 $dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
 $user = 'rqctcorramtofr';
@@ -25,6 +26,7 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
     foreach($query_result as $row) {
+        print $row["user_id"] . ": " . $row["message"] . $row["speech_date"] . "<br/>";
     }
 
   // DBを切断する
@@ -65,6 +67,9 @@ try {
                     <div>
                         <label>お問い合わせ項目<span>必須</span></label>
                         <select name="item">
+                            <option value="">お問い合わせ項目を選択してください</option>
+                            <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                            <option value="ご意見・ご感想">ご意見・ご感想</option>
                             <?php
 $dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
 $user = 'rqctcorramtofr';
@@ -76,7 +81,7 @@ try {
 
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
-    foreach($query_result as $row) {<option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>";
+    foreach($query_result as $row) {
     }
 
   // DBを切断する
@@ -87,9 +92,6 @@ try {
     die();
 }
 ?>
-                                <option value="">お問い合わせ項目を選択してください</option>
-                                <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
-                                <option value="ご意見・ご感想">ご意見・ご感想</option>
                         </select>
                     </div>
                     <div>
