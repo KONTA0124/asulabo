@@ -21,8 +21,8 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM messages');
     foreach($query_result as $row) {
-    print $row["id"] . ": " . $row["message"] . "<br/>";
-  }
+    echo $row["user_id"] . ": " . $row["message"] . $row["speech_date"] . "<br/>";
+    }
 
   // DBを切断する
   $dbh = null;
