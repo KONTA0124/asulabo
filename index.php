@@ -9,13 +9,6 @@
 <body>
 <div><h1>Company Name</h1></div>
 <div><h2>お問い合わせ</h2></div>
-    <?php 
-        $url = parse_url(getenv('DATABASE_URL'));
-        $dsn = sprintf('pgsql:host=%s;dbname=%s', $url['host'], substr($url['path'], 1));
-
-        $pdo = new PDO($dsn, $url['user'], $url['pass']);
-        var_dump($pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
-    >
 <div>
 	<form action="confirm.php" method="post" name="form" onsubmit="return validate()">
 		<h1 class="contact-title">お問い合わせ 内容入力</h1>
