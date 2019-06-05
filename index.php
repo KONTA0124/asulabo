@@ -17,7 +17,7 @@ $pass = '0a0b29fa56efd4c1776ea414bec8d385ae1578ae9f7fbc7c700145f277311368';
 try {
   // DBに接続する
   $dbh = new PDO($dsn, $user, $pass);
-
+echo 'success';
   // ここでクエリ実行する
 
   // DBを切断する
