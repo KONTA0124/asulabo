@@ -9,6 +9,26 @@
 <body>
 <div><h1>Company Name</h1></div>
 <div><h2>お問い合わせ</h2></div>
+  <?php
+$dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
+$user = 'rqctcorramtofr';
+$pass = '0a0b29fa56efd4c1776ea414bec8d385ae1578ae9f7fbc7c700145f277311368';
+
+try {
+  // DBに接続する
+  $dbh = new PDO($dsn, $user, $pass);
+
+  // ここでクエリ実行する
+
+  // DBを切断する
+  $dbh = null;
+} catch (PDOException $e) {
+    // 接続にエラーが発生した場合ここに入る
+    print "DB ERROR: " . $e->getMessage() . "<br/>";
+    die();
+}
+?>
+
 <div>
 	<form action="confirm.php" method="post" name="form" onsubmit="return validate()">
 		<h1 class="contact-title">お問い合わせ 内容入力</h1>
