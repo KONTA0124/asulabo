@@ -23,7 +23,7 @@
         <div class="container clearfix">
             <div class="row clearfix">
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
+                    <button class="playbutton" style="display: inline-block">
                         <img src="images/drink_wine_champagne_stopper.png" />
                     </button>
                 </div>
