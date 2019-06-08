@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>メニュー</title>
+    <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="contact.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
