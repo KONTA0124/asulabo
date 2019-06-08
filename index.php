@@ -20,7 +20,7 @@
     </div>
 
     <div>
-        <div class="container header-area-wrap clearfix">
+        <div class="container clearfix">
             <div class="row clearfix">
                 <div class="col-md-4 clearfix">
                     <button class="playbutton">
