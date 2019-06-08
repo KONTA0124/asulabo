@@ -6,6 +6,10 @@
     <title>メニュー</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="contact.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
