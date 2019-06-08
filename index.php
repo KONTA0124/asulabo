@@ -3,16 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>お問い合わせフォーム</title>
+    <title>メニュー</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="contact.js"></script>
 </head>
 
 <body>
     <div>
-        <h1>Company Name</h1></div>
+        <h1>メニュー</h1></div>
     <div>
-        <h2>お問い合わせ</h2></div>
+        <button type="submit">管理画面</button>
+    </div>
 
     <div>
         <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
