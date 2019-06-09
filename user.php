@@ -50,7 +50,9 @@ try {
         }
     } else {
         foreach($query_result as $row) {
-            print '【会員登録済】　名前：' . $row["name"] . '、　性別：' . $row["sex"] . '、　年代：' . $row["age"] . '歳';
+            $sex = $row["sex"];
+            $name = $row["name"];
+            print '【会員登録済】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $row["age"] . '歳';
         }
     }
 
