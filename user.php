@@ -59,13 +59,40 @@ try {
     die();
 }
 ?>
-                <?php print $name; ?>
-                    <?php print $sex; ?>
-                        <?php print $age; ?>
         </div>
 
         <div>
             <div class="container clearfix">
+                <?php
+$dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
+$user = 'rqctcorramtofr';
+$pass = '0a0b29fa56efd4c1776ea414bec8d385ae1578ae9f7fbc7c700145f277311368';
+
+try {
+  // DBに接続する
+  $dbh = new PDO($dsn, $user, $pass);
+
+  // ここでクエリ実行する
+    $query_result = $dbh->query('SELECT * FROM cuisines');
+        print '<div class="row clearfix">';
+    foreach($query_result as $row) {
+        print '<button class="playbutton button-images">';
+        print '<img src="' . $row["path"] . '" style="height:150px" />';
+        print '</button>';
+        print '<div>' . $row["name"] . '</div>';
+        print '</div>';
+        print '</div>';
+    }
+
+  // DBを切断する
+  $dbh = null;
+} catch (PDOException $e) {
+    // 接続にエラーが発生した場合ここに入る
+    print "DB ERROR: " . $e->getMessage() . "<br/>";
+    die();
+}
+?>
+                    <!--
                 <div class="row clearfix">
                     <div class="col-md-4 clearfix">
                         <button class="playbutton button-images">
@@ -100,6 +127,7 @@ try {
                         </button>
                     </div>
                 </div>
+-->
             </div>
         </div>
     </body>

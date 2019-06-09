@@ -40,9 +40,9 @@ try {
     $query_result = $dbh->query('SELECT * FROM sexes');
     foreach($query_result as $row) {
         if($row["id"] == 1) {
-            print '<input type="radio" name="sex" value="' . $row["id"] . '" checked> ' . $row["name"];
+            print '<input type="radio" name="sex" value="' . $row["name"] . '" checked> ' . $row["name"];
         } else {
-            print '<input type="radio" name="sex" value="' . $row["id"] . '"> ' . $row["name"];
+            print '<input type="radio" name="sex" value="' . $row["name"] . '"> ' . $row["name"];
         }
     }
 
