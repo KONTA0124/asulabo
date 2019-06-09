@@ -3,6 +3,7 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// フォームから送信されたデータを各変数に格納
 		$name = $_POST["name"];
+        print $name; 
 	}
 
 	// 送信ボタンが押されたら
