@@ -19,50 +19,47 @@
         </a>
     </div>
     <div>
-        <h1>顧客画面</h1> //
-        <?php echo $name;>
-//        <?php echo $sex;>
-//        <?php echo $age;>
+        <h1>顧客画面</h1>
     </div>
 
-            <div>
-                <div class="container clearfix">
-                    <div class="row clearfix">
-                        <div class="col-md-4 clearfix">
-                            <button class="playbutton button-images">
-                                <img src="images/drink_wine_champagne_stopper.png" style="height:150px" />
-                            </button>
-                        </div>
-                        <div class="col-md-4 clearfix">
-                            <button class="playbutton button-images">
-                                <img src="images/party_highball_jug.png" style="height:150px" />
-                            </button>
-                        </div>
-                        <div class="col-md-4 clearfix">
-                            <button class="playbutton button-images">
-                                <img src="images/petbottle_cola.png" style="height:150px" />
-                            </button>
-                        </div>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-md-4 clearfix">
-                            <button class="playbutton button-images">
-                                <img src="images/food_harusame_soup.png" style="height:150px" />
-                            </button>
-                        </div>
-                        <div class="col-md-4 clearfix">
-                            <button class="playbutton button-images">
-                                <img src="images/food_sauce_katsudon.png" style="height:150px" />
-                            </button>
-                        </div>
-                        <div class="col-md-4 clearfix">
-                            <button class="playbutton button-images">
-                                <img src="images/food_yagijiru.png" style="height:150px" />
-                            </button>
-                        </div>
-                    </div>
+    <div>
+        <div class="container clearfix">
+            <div class="row clearfix">
+                <div class="col-md-4 clearfix">
+                    <button class="playbutton button-images">
+                        <img src="images/drink_wine_champagne_stopper.png" style="height:150px" />
+                    </button>
+                </div>
+                <div class="col-md-4 clearfix">
+                    <button class="playbutton button-images">
+                        <img src="images/party_highball_jug.png" style="height:150px" />
+                    </button>
+                </div>
+                <div class="col-md-4 clearfix">
+                    <button class="playbutton button-images">
+                        <img src="images/petbottle_cola.png" style="height:150px" />
+                    </button>
                 </div>
             </div>
-            </body>
+            <div class="row clearfix">
+                <div class="col-md-4 clearfix">
+                    <button class="playbutton button-images">
+                        <img src="images/food_harusame_soup.png" style="height:150px" />
+                    </button>
+                </div>
+                <div class="col-md-4 clearfix">
+                    <button class="playbutton button-images">
+                        <img src="images/food_sauce_katsudon.png" style="height:150px" />
+                    </button>
+                </div>
+                <div class="col-md-4 clearfix">
+                    <button class="playbutton button-images">
+                        <img src="images/food_yagijiru.png" style="height:150px" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
-            </html>
+</html>
