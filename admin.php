@@ -22,7 +22,7 @@
         <h1>管理画面</h1>
     </div>
 
-    <form action="index.php" method="post" name="form" onsubmit="return validate()">
+    <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
         <h1 class="contact-title">顧客情報入力</h1>
         <p>顧客情報を入力の上、「顧客画面に反映する」ボタンをクリックしてください。</p>
         <div>
