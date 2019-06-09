@@ -18,6 +18,9 @@
             <button>顧客画面</button>
         </a>
     </div>
+    <div>
+        <h1>管理画面</h1>
+    </div>
 
     <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
         <h1 class="contact-title">お問い合わせ 内容入力</h1>
@@ -41,7 +44,11 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM sexes');
     foreach($query_result as $row) {
-        print '<input type="radio" name="sex" value="' . $row["id"] . '" checked> ' . $row["name"];
+        if($row["id"] == 1) {
+            print '<input type="radio" name="sex" value="' . $row["id"] . '" checked> ' . $row["name"];
+        } else {
+            print '<input type="radio" name="sex" value="' . $row["id"] . '"> ' . $row["name"];
+        }
     }
 
   // DBを切断する
@@ -55,23 +62,35 @@ try {
             </div>
             <div>
                 <label>年代<span>必須</span></label>
-                <input type="radio" name="sex" value="男性" checked> 男性
-                <input type="radio" name="sex" value="女性"> 女性
-            </div>
-            <div>
-                <label>お問い合わせ項目<span>必須</span></label>
                 <select name="item">
-                    <option value="">お問い合わせ項目を選択してください</option>
-                    <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
-                    <option value="ご意見・ご感想">ご意見・ご感想</option>
+                    <option value="">年代を選択してください</option>
+                    <?php
+$dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
+$user = 'rqctcorramtofr';
+$pass = '0a0b29fa56efd4c1776ea414bec8d385ae1578ae9f7fbc7c700145f277311368';
+
+try {
+  // DBに接続する
+  $dbh = new PDO($dsn, $user, $pass);
+
+  // ここでクエリ実行する
+    $query_result = $dbh->query('SELECT * FROM ages');
+    foreach($query_result as $row) {
+        print '<option value="' . $row["name"] . '">' . $row["name"] . '</option>';
+    }
+
+  // DBを切断する
+  $dbh = null;
+} catch (PDOException $e) {
+    // 接続にエラーが発生した場合ここに入る
+    print "DB ERROR: " . $e->getMessage() . "<br/>";
+    die();
+}
+?>
                 </select>
             </div>
-            <div>
-                <label>お問い合わせ内容<span>必須</span></label>
-                <textarea name="content" rows="5" placeholder="お問合せ内容を入力"></textarea>
-            </div>
         </div>
-        <button type="submit">確認画面へ</button>
+        <button type="submit">顧客画面に反映する</button>
     </form>
 </body>
 
