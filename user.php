@@ -3,8 +3,8 @@
 	if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		// フォームから送信されたデータを各変数に格納
 		$name = $_POST["name"];
-        $name = $_POST["sex"];
-        $name = $_POST["age"];
+        $sex = $_POST["sex"];
+        $age = $_POST["age"];
 	}
 ?>
 
@@ -29,6 +29,11 @@
         </div>
         <div>
             <h1>顧客画面</h1>
+        </div>
+        <div>
+            <?php print $name; ?>
+                <?php print $sex; ?>
+                    <?php print $age; ?>
         </div>
 
         <div>

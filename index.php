@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>管理画面</title>
+    <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="contact.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
