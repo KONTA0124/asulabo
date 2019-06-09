@@ -23,7 +23,7 @@
 
     <body>
         <div>
-            <a href="admin.php">
+            <a href="index.php">
                 <button>管理画面に戻る</button>
             </a>
         </div>
@@ -44,10 +44,13 @@ try {
     $query_result = $dbh->query("SELECT * FROM members WHERE name LIKE '" .$name . "'");
     $count = $query_result->rowCount();
     if($count == 0) {
-        print '【会員未登録】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $age;
+        $query_result = $dbh->query("SELECT * FROM ages WHERE id = '" . $age . "'");
+        foreach($query_result as $row) {
+            print '【会員未登録】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $row["name"];
+        }
     } else {
         foreach($query_result as $row) {
-            print '【会員登録済】　名前：' . $row["name"] . '、　性別：' . $row["sex"] . '、　年代：' . $row["age"];
+            print '【会員登録済】　名前：' . $row["name"] . '、　性別：' . $row["sex"] . '、　年代：' . $row["age"] . '歳';
         }
     }
 
@@ -80,7 +83,7 @@ try {
         print '<button class="playbutton button-images">';
         print '<img src="' . $row["path"] . '" style="height:150px" />';
         print '</button>';
-        print '<div>' . $row["name"] . '</div>';
+        print '<div style="text-align:center">' . $row["name"] . '</div>';
         print '</div>';
     }
     print '</div>';

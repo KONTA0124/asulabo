@@ -71,7 +71,7 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM ages');
     foreach($query_result as $row) {
-        print '<option value="' . $row["name"] . '">' . $row["name"] . '</option>';
+        print '<option value="' . $row["id"] . '">' . $row["name"] . '</option>';
     }
 
   // DBを切断する
@@ -101,7 +101,7 @@ try {
   $dbh = new PDO($dsn, $user, $pass);
 
   // ここでクエリ実行する
-    $query_result = $dbh->query('SELECT * FROM members');
+    $query_result = $dbh->query('SELECT * FROM members order by id');
     foreach($query_result as $row) {
         print '<tr>';
         print '<td>'. $row["id"] . '</td>';
@@ -110,7 +110,7 @@ try {
         print '<td>'. $row["tel"] . '</td>';
         print '<td>'. $row["mail"] . '</td>';
         print '<td>'. $row["sex"] . '</td>';
-        print '<td>'. $row["birthday"] . '</td>';
+        print '<td>'. $row["age"] . '</td>';
         print '</tr>';
     }
 
