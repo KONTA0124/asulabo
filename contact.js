@@ -12,7 +12,7 @@ var validate = function () {
     }
 
     // お問い合わせ項目の選択をチェック
-    if (document.form.item.value == "") {
+    if (document.form.age.value == "") {
         errorElement(document.form.age, "年代が選択されていません");
         flag = false;
     }
@@ -43,5 +43,40 @@ var removeClass = function (className) {
     var elements = document.getElementsByClassName(className);
     while (elements.length > 0) {
         elements[0].className = "";
+    }
+}
+
+var validateMail = function (val) {
+    if (val.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) == null) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
+var validateNumber = function (val) {
+    if (val.match(/[^0-9]+/)) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
+var validateTel = function (val) {
+    if (val.match(/^[0-9-]{6,13}$/) == null) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+
+var validateKana = function (val) {
+    if (val.match(/^[ぁ-ん]+$/) == null) {
+        return false;
+    } else {
+        return true;
     }
 }
