@@ -26,35 +26,35 @@
         <div class="container clearfix">
             <div class="row clearfix">
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton" style="margin:auto;height:200px;wigth:250px">
-                        <img src="images/drink_wine_champagne_stopper.png" />
+                    <button class="playbutton" style="margin:auto;height:200px;width:250px">
+                        <img src="images/drink_wine_champagne_stopper.png" style="height:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton" style="margin:auto;height:200px;wigth:250px">
-                        <img src="images/party_highball_jug.png" />
+                    <button class="playbutton" style="margin:auto;height:200px;width:250px">
+                        <img src="images/party_highball_jug.png" style="height:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton" style="margin:auto;height:200px;wigth:250px">
-                        <img src="images/petbottle_cola.png" />
+                    <button class="playbutton" style="margin:auto;height:200px;width:250px">
+                        <img src="images/petbottle_cola.png" style="height:200px" />
                     </button>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton" style="margin:auto;height:200px;wigth:250px">
-                        <img src="images/food_harusame_soup.png" />
+                    <button class="playbutton" style="margin:auto;height:200px;width:250px">
+                        <img src="images/food_harusame_soup.png" style="height:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton" style="margin:auto;height:200px;wigth:250px">
-                        <img src="images/food_sauce_katsudon.png" />
+                    <button class="playbutton" style="margin:auto;height:200px;width:250px">
+                        <img src="images/food_sauce_katsudon.png" style="height:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton" style="margin:auto;height:200px;wigth:250px">
-                        <img src="images/food_yagijiru.png" />
+                    <button class="playbutton" style="margin:auto;height:200px;width:250px">
+                        <img src="images/food_yagijiru.png" style="height:200px" />
                     </button>
                 </div>
             </div>
