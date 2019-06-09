@@ -13,7 +13,7 @@ var validate = function () {
 
     // お問い合わせ項目の選択をチェック
     if (document.form.item.value == "") {
-        errorElement(document.form.item, "お問い合わせ項目が選択されていません");
+        errorElement(document.form.age, "年代が選択されていません");
         flag = false;
     }
 
