@@ -74,15 +74,15 @@ try {
 
   // ここでクエリ実行する
     $query_result = $dbh->query('SELECT * FROM cuisines');
-        print '<div class="row clearfix">';
+    print '<div class="row clearfix">';
     foreach($query_result as $row) {
         print '<button class="playbutton button-images">';
         print '<img src="' . $row["path"] . '" style="height:150px" />';
         print '</button>';
         print '<div>' . $row["name"] . '</div>';
         print '</div>';
-        print '</div>';
     }
+    print '</div>';
 
   // DBを切断する
   $dbh = null;
