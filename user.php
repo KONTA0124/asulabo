@@ -45,7 +45,7 @@ try {
     if(is_null($query_result)) {
         print $row["name"] ;
     } else {
-        print 'aaaaaa' ;
+        print $query_result ;
     }
 
   // DBを切断する
