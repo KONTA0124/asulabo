@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <title>メニュー</title>
-    <link href="css/style.css" rel="stylesheet">
     <script type="text/javascript" src="contact.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
     <!-- BootstrapのCSS読み込み -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -23,8 +23,8 @@
     </div>
 
     <form action="confirm.php" method="post" name="form" onsubmit="return validate()">
-        <h1 class="contact-title">お問い合わせ 内容入力</h1>
-        <p>お問い合わせ内容をご入力の上、「確認画面へ」ボタンをクリックしてください。</p>
+        <h1 class="contact-title">顧客情報入力</h1>
+        <p>顧客情報を入力の上、「顧客画面に反映する」ボタンをクリックしてください。</p>
         <div>
             <div>
                 <label>お名前</label>
