@@ -92,6 +92,42 @@ try {
         </div>
         <button type="submit">顧客画面に反映する</button>
     </form>
+    <div>
+        <div>会員情報</div>
+        <table>
+            <?php
+$dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
+$user = 'rqctcorramtofr';
+$pass = '0a0b29fa56efd4c1776ea414bec8d385ae1578ae9f7fbc7c700145f277311368';
+
+try {
+  // DBに接続する
+  $dbh = new PDO($dsn, $user, $pass);
+
+  // ここでクエリ実行する
+    $query_result = $dbh->query('SELECT * FROM members');
+    foreach($query_result as $row) {
+        print '<tr>';
+        print '<td>'. $row["id"] . '</td>';
+        print '<td>'. $row["name"] . '</td>';
+        print '<td>'. $row["phonetic"] . '</td>';
+        print '<td>'. $row["tel"] . '</td>';
+        print '<td>'. $row["mail"] . '</td>';
+        print '<td>'. $row["sex"] . '</td>';
+        print '<td>'. $row["birthday"] . '</td>';
+        print '</tr>';
+    }
+
+  // DBを切断する
+  $dbh = null;
+} catch (PDOException $e) {
+    // 接続にエラーが発生した場合ここに入る
+    print "DB ERROR: " . $e->getMessage() . "<br/>";
+    die();
+}
+?>
+        </table>
+    </div>
 </body>
 
 </html>
