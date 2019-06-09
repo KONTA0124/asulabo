@@ -8085,12 +8085,8 @@ body {
 }
 
 body > div:nth-child(2) {
-    background-color: #8dc21f;
-}
-
-body > div:nth-child(2) {
     box-shadow: 0 1px 1px 0 rgba(5, 0, 1, 0.2);
-    background: #fff;
+    background: #8dc21f;
     margin-bottom: 50px;
 }
 
