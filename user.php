@@ -46,7 +46,9 @@ try {
     if($count == 0) {
         print '【会員未登録】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $age;
     } else {
-        print '【会員登録済】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $age;
+        foreach($query_result as $row) {
+            print '【会員登録済】　名前：' . $row["name"] . '、　性別：' . $row["sex"] . '、　年代：' . $row["age"];
+        }
     }
 
   // DBを切断する
