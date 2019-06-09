@@ -43,9 +43,9 @@ try {
   // ここでクエリ実行する
     $query_result = $dbh->query("SELECT * FROM members WHERE name LIKE '" .$name . "'");
     if($query_result) {
-        print $row["name"] ;
+        print 'bbbbb' ;
     } else {
-        print "aaaa" ;
+        print 'aaaa' ;
     }
 
   // DBを切断する
