@@ -1,3 +1,13 @@
+<?php 
+	// フォームのボタンが押されたら
+	if ($_SERVER["REQUEST_METHOD"] == "POST") {
+		// フォームから送信されたデータを各変数に格納
+		$name = $_POST["name"];
+		$sex = $_POST["sex"];
+		$age = $_POST["age"];
+	}
+>
+    
 <!DOCTYPE html>
 <html lang="ja">
 
