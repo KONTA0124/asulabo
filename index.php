@@ -30,9 +30,9 @@
     </div>
     <div>
         <h1>顧客画面</h1>
-        <?php echo $name;>
-        <?php echo $sex;>
-        <?php echo $age;>
+//        <?php echo $name;>
+//        <?php echo $sex;>
+//        <?php echo $age;>
             </div>
 
             <div>
