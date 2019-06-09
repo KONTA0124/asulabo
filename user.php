@@ -42,7 +42,8 @@ try {
 
   // ここでクエリ実行する
     $query_result = $dbh->query("SELECT * FROM members WHERE name LIKE '" .$name . "'");
-    if($query_result) {
+    $count = $query_result->rowCount();
+    if($count == 0) {
         print 'bbbbb' ;
     } else {
         print 'aaaa' ;
