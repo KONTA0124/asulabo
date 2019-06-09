@@ -41,9 +41,11 @@ try {
   $dbh = new PDO($dsn, $user, $pass);
 
   // ここでクエリ実行する
-    $query_result = $dbh->query("SELECT * FROM members WHERE name LIKE '%田中%'");
-    foreach($query_result as $row) {
+    $query_result = $dbh->query("SELECT * FROM members WHERE name LIKE '" .$name . "'");
+    if(is_null($query_result)) {
         print $row["name"] ;
+    } else {
+        print 'aaaaaa' ;
     }
 
   // DBを切断する
