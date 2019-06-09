@@ -8084,7 +8084,7 @@ body {
     font-family: 'Lucida Grande', Arial, 'Hiragino Kaku Gothic Pro', Meiryo, 'メイリオ', sans-serif;
 }
 
-body > div:first-child {
+body > div:nth-child(2) {
     background-color: #8dc21f;
 }
 
@@ -8373,4 +8373,10 @@ textarea + div {
 
 .error-form {
     border-color: #fb9a93 !important;
+}
+
+.button-images {
+    margin: auto;
+    height: 200px;
+    width: 250px;
 }
