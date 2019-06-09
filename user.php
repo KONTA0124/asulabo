@@ -1,3 +1,9 @@
+<?php 
+	// フォームのボタンが押されたら
+	$name=filter_input(INPUT_POST,'name');
+    print $name;
+>
+    
 <!DOCTYPE html>
 <html lang="ja">
 
