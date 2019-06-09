@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>メニュー</title>
+    <title>管理画面</title>
     <script type="text/javascript" src="contact.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="js/bootstrap.min.js"></script>
@@ -15,7 +15,7 @@
 <body>
     <div>
         <a href="index.php">
-            <button>顧客画面</button>
+            <button>顧客画面に戻る</button>
         </a>
     </div>
     <div>
@@ -62,7 +62,7 @@ try {
             </div>
             <div>
                 <label>年代<span>必須</span></label>
-                <select name="item">
+                <select name="age">
                     <option value="">年代を選択してください</option>
                     <?php
 $dsn = 'pgsql:dbname=d4j3vu6k5dkt1s;host=ec2-54-235-114-242.compute-1.amazonaws.com;port=5432';
