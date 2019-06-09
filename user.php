@@ -51,7 +51,16 @@ try {
     } else {
         foreach($query_result as $row) {
             $sex = $row["sex"];
-            $name = $row["name"];
+            $age = $row["age"];
+            if($row["age"] < 20) {
+                $age = 1;
+            } else if($row["age"] < 40) {
+                $age = 2;
+            } else if($row["age"] < 60) {
+                $age = 3;
+            } else {
+                $age = 4;
+            }
             print '【会員登録済】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $row["age"] . '歳';
         }
     }
@@ -78,7 +87,7 @@ try {
   $dbh = new PDO($dsn, $user, $pass);
 
   // ここでクエリ実行する
-    $query_result = $dbh->query("SELECT * FROM cuisines WHERE sex = '男性'");
+    $query_result = $dbh->query("SELECT * FROM cuisines WHERE sex = '" . $sex . "' and age = '" . $age . "'");
     print '<div class="row clearfix">';
     foreach($query_result as $row) {
         print '<div class="col-md-4 clearfix">';
