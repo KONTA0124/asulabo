@@ -23,35 +23,35 @@
         <div class="container clearfix">
             <div class="row clearfix">
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
+                    <button class="playbutton" style="margin: auto">
                         <img src="images/drink_wine_champagne_stopper.png" style="width:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
-                        <img src="images/drink_wine_champagne_stopper.png" style="width:200px" />
+                    <button class="playbutton" style="margin: auto">
+                        <img src="images/party_highball_jug.png" style="width:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
-                        <img src="images/drink_wine_champagne_stopper.png" style="width:200px" />
+                    <button class="playbutton" style="margin: auto">
+                        <img src="images/petbottle_cola.png" style="width:200px" />
                     </button>
                 </div>
             </div>
             <div class="row clearfix">
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
-                        <img src="images/drink_wine_champagne_stopper.png" style="width:200px" />
+                    <button class="playbutton" style="margin: auto">
+                        <img src="images/food_harusame_soup.png" style="width:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
-                        <img src="images/drink_wine_champagne_stopper.png" style="width:200px" />
+                    <button class="playbutton" style="margin: auto">
+                        <img src="images/food_sauce_katsudon.png" style="width:200px" />
                     </button>
                 </div>
                 <div class="col-md-4 clearfix">
-                    <button class="playbutton">
-                        <img src="images/drink_wine_champagne_stopper.png" style="width:200px" />
+                    <button class="playbutton" style="margin: auto">
+                        <img src="images/food_yagijiru.png" style="width:200px" />
                     </button>
                 </div>
             </div>
