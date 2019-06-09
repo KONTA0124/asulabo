@@ -44,9 +44,9 @@ try {
     $query_result = $dbh->query("SELECT * FROM members WHERE name LIKE '" .$name . "'");
     $count = $query_result->rowCount();
     if($count == 0) {
-        print 'bbbbb' ;
+        print '【会員未登録】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $age;
     } else {
-        print 'aaaa' ;
+        print '【会員登録済】　名前：' . $name . '、　性別：' . $sex . '、　年代：' . $age;
     }
 
   // DBを切断する
