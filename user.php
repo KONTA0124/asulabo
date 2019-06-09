@@ -73,7 +73,7 @@ try {
   $dbh = new PDO($dsn, $user, $pass);
 
   // ここでクエリ実行する
-    $query_result = $dbh->query('SELECT * FROM cuisines WHERE sex = "男性"');
+    $query_result = $dbh->query("SELECT * FROM cuisines WHERE sex = '男性'");
     print '<div class="row clearfix">';
     foreach($query_result as $row) {
         print '<div class="col-md-4 clearfix">';
